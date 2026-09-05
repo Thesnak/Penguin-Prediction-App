@@ -65,7 +65,7 @@ else:
     st.write(df)
 
 # Reads in saved classification model
-load_clf = pickle.load(open(r'D:\streamlit\streamlit_freecodecamp-main\app_8_classification_penguins\penguins_clf.pkl', 'rb'))
+load_clf = pickle.load(open(r'penguins_clf.pkl', 'rb'))
 
 # Apply model to make predictions
 prediction = load_clf.predict(df)
